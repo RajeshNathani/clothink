@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .sel{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center; 
+            height: 10vh;
+            grid-gap: 2em;
+        }
+        .g{
+            width: 40vw;
+            height: 20vh;
+            margin-left: 5%;
+        }
+        img{
+            height: 30vh;
+            height: 20vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <h1>Select Gender:</h1> <br> <br>
+        <div class="sel">
+            <div class="g" onclick="male()">
+            <img src="boy.jpg" alt="">
+                <h4>Male</h4>
+        </div>
+            <div class="g" onclick=" UIkit.notification({message: 'Coming Soon!' ,status: 'success' , pos: 'top-center' , timeout:'1000'})">
+            <img src="girl.jpg" alt="">
+            <h4>Female</h4>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function male(){
+        localStorage['gender'] = 'Male';
+        window.location.href = "price.html"
+    }
+</script>

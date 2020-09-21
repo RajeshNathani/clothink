@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-image: url('background.jpg');
+    height: 50vh !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    text-align: right;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    min-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    height: 65vh;
+}
+.horizontal:-webkit-scrollbar {
+    display: none;
+  }
+img{
+    height: 70vw !important;
+}
+.uk-card{
+    border-radius: 5px;
+}
